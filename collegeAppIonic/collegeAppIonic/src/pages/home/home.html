@@ -1,0 +1,19 @@
+﻿<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>首页</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <div>
+    <ion-list color="primary">
+      <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+        {{ item.name }}
+      </button>
+    </ion-list>
+    <!--<ion-datetime cancelText="取消"
+                  doneText="确定" [(ngModel)]="starttime"
+                  displayFormat="YYYY MM D"
+                  monthNames="一月,二月,三月,四月,五月,六月,七月,八月,九月,十月,十一月,十二月"
+                  monthShortNames="一月,二月,三月,四月,五月,六月,七月,八月,九月,十月,十一月,十二月"></ion-datetime>-->
+  </div>
+</ion-content>
