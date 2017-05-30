@@ -9,13 +9,15 @@ import { IonicPage, NavController, NavParams, ActionSheetController, Platform } 
  */
 @IonicPage()
 @Component({
-  selector: 'page-actionsheet',
-  templateUrl: 'actionsheet.html',
+    selector: 'page-actionsheet',
+    templateUrl: 'actionsheet.html',
 })
 export class ActionsheetPage {
 
-    constructor(public platform: Platform,public navCtrl: NavController, public navParams: NavParams, public actionSheet: ActionSheetController) {
-  }
+    constructor(public platform: Platform, public navCtrl: NavController, public navParams: NavParams, public actionSheet: ActionSheetController) {
+    }
+    alertME() {
+    }
     openAction() {
         let act = this.actionSheet.create({
             title: '操作',
@@ -23,7 +25,7 @@ export class ActionsheetPage {
                 {
                     text: '打电话',
                     role: 'destructive',
-                    icon:'call',
+                    icon: 'call',
                     handler: () => {
                         console.log('Destructive clicked');
                     }
@@ -42,9 +44,9 @@ export class ActionsheetPage {
             ]
         });
         act.present();
-  }
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ActionsheetPage');
-  }
+    }
+    ionViewDidLoad() {
+        console.log('ionViewDidLoad ActionsheetPage');
+    }
 
 }
