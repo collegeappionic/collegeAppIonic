@@ -1011,6 +1011,7 @@
     <Content Include="src\pages\alert\alert.html" />
     <Content Include="src\pages\contact\contact.html" />
     <Content Include="src\pages\datepick\datepick.html" />
+    <Content Include="src\pages\defaultlist\defaultlist.html" />
     <Content Include="src\pages\home\home.html" />
     <Content Include="src\pages\inputs\inputs.html" />
     <Content Include="src\pages\list\list.html" />
@@ -1036,14 +1037,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\studentController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="plugins\cordova-plugin-console\src\wp\DebugConsole.cs" />
-    <Compile Include="plugins\cordova-plugin-device\src\wp\Device.cs" />
-    <Compile Include="plugins\cordova-plugin-splashscreen\src\wp\ResolutionHelper.cs" />
-    <Compile Include="plugins\cordova-plugin-splashscreen\src\wp\SplashScreen.cs" />
-    <Compile Include="plugins\cordova-plugin-statusbar\src\wp\StatusBar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -1648,6 +1645,8 @@
     <Content Include="package.json" />
     <Content Include="tsconfig.json" />
     <Content Include="tslint.json" />
+    <Content Include="src\pages\defaultlist\defaultlist.scss" />
+    <Content Include="src\mockData\segment.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1687,10 +1686,10 @@
     <Content Include="www\build\main.css.map" />
     <Content Include="www\build\main.js.map" />
     <Content Include="www\manifest.json" />
+    <Content Include="www\mockData\segment.json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
     <Folder Include="platforms\android\build\generated\assets\shaders\debug\" />
     <Folder Include="platforms\android\build\generated\res\resValues\debug\" />
@@ -1740,6 +1739,8 @@
     <Folder Include="platforms\android\CordovaLib\build\intermediates\transforms\mergeJniLibs\debug\" />
     <Folder Include="platforms\android\CordovaLib\build\tmp\compileDebugJavaWithJavac\" />
     <Folder Include="platforms\android\libs\" />
+    <Folder Include="plugins\cordova-plugin-console\src\wp\" />
+    <Folder Include="plugins\cordova-plugin-splashscreen\src\wp\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="plugins\cordova-plugin-splashscreen\types\index.d.ts" />
@@ -1758,6 +1759,8 @@
     <TypeScriptCompile Include="src\pages\contact\contact.ts" />
     <TypeScriptCompile Include="src\pages\datepick\datepick.module.ts" />
     <TypeScriptCompile Include="src\pages\datepick\datepick.ts" />
+    <TypeScriptCompile Include="src\pages\defaultlist\defaultlist.module.ts" />
+    <TypeScriptCompile Include="src\pages\defaultlist\defaultlist.ts" />
     <TypeScriptCompile Include="src\pages\home\home.ts" />
     <TypeScriptCompile Include="src\pages\inputs\inputs.module.ts" />
     <TypeScriptCompile Include="src\pages\inputs\inputs.ts" />
@@ -1768,6 +1771,7 @@
     <TypeScriptCompile Include="src\pages\segment\segment.module.ts" />
     <TypeScriptCompile Include="src\pages\segment\segment.ts" />
     <TypeScriptCompile Include="src\pages\tabs\tabs.ts" />
+    <TypeScriptCompile Include="src\providers\commonhttp\commonhttp.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

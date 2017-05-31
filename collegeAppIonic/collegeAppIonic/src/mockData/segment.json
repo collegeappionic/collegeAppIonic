@@ -1,0 +1,34 @@
+﻿[
+  {
+    "name": "宝马",
+    "data": [
+      {
+        "title": "X1"
+      },
+      {
+        "title": "X3"
+      },
+      {
+        "title": "535"
+      }
+    ]
+  },
+  {
+    "name": "英菲尼迪",
+    "data": [
+      { "title": "Q50" },
+      { "title": "Q70" },
+      { "title": "QX50" },
+      { "title": "QX80" }
+    ]
+  },
+  {
+    "name": "奥迪",
+    "data": [
+      { "title": "Q3" },
+      { "title": "Q5" },
+      { "title": "Q7" },
+      { "title": "A4L" }
+    ]
+  }
+]

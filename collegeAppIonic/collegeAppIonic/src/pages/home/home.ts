@@ -4,6 +4,7 @@ import { ActionsheetPage } from '../actionsheet/actionsheet';
 import { DatepickPage } from '../datepick/datepick';
 import { AlertPage } from '../alert/alert';
 import { InputsPage } from '../inputs/inputs';
+import { DefaultlistPage } from '../defaultlist/defaultlist';
 
 @Component({
   selector: 'page-home',
@@ -30,6 +31,14 @@ export class HomePage {
             {
                 name: "输入",
                 com: InputsPage
+            },
+            {
+                name: "通用列表",
+                com: DefaultlistPage
+            },
+            {
+                name: "页内TAB",
+                com:"SegmentPage"
             }
         ];
     }

@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+﻿import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { CommonhttpProvider } from '../../providers/commonhttp/commonhttp';
+import * as _ from 'lodash';
 
 /**
  * Generated class for the SegmentPage page.
@@ -9,16 +11,40 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  */
 @IonicPage()
 @Component({
-  selector: 'page-segment',
-  templateUrl: 'segment.html',
+    selector: 'page-segment',
+    templateUrl: 'segment.html',
 })
 export class SegmentPage {
+    myname = "";
+    tabs = [];
+    nowTab = {};
+    constructor(public navCtrl: NavController, public navParams: NavParams, private commonhttpProvider: CommonhttpProvider) {
+    }
+    concats = [];
+    alertNowTab() {
+        alert(this.nowTab);
+    }
+    getNowTab() {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+    }
+    ionViewDidLoad() {
+        console.log('ionViewDidLoad SegmentPage');
+        this.commonhttpProvider.getStudent()
+            .subscribe(resData =>
+                console.log(resData)
+            );
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad SegmentPage');
-  }
+        this.commonhttpProvider.getTabs()
+            .subscribe(resData => this.tabs = resData);
+        _.take([1, 2, 3]);
+    }
+    getStudent() {
+        this.commonhttpProvider.getStudent()
+            .subscribe(resData =>
+                console.log(resData)
+            );
 
+        this.commonhttpProvider.getTabs()
+            .subscribe(resData => this.tabs = resData)
+    }
 }
