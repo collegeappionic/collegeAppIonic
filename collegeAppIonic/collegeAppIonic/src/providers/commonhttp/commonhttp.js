@@ -25,9 +25,21 @@ var CommonhttpProvider = (function () {
         return this.http.get('../api/student')
             .map(this.extractData);
     };
+    CommonhttpProvider.prototype.getJsonFile = function (path) {
+        return this.http.get(path)
+            .map(this.extractData);
+    };
+    CommonhttpProvider.prototype.postServeData = function (path, data) {
+        return this.http.post(path, data)
+            .map(this.extractData);
+    };
     CommonhttpProvider.prototype.extractData = function (res) {
         var body = res.json();
         return body || {};
+    };
+    CommonhttpProvider.prototype.getTabs = function () {
+        return this.http.get('mockData/segment.json')
+            .map(this.extractData);
     };
     return CommonhttpProvider;
 }());

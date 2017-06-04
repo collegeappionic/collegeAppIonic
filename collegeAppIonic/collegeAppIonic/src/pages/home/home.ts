@@ -39,7 +39,7 @@ export class HomePage {
             {
                 name: "页内TAB",
                 com:"SegmentPage"
-            }
+            },
         ];
     }
     itemSelected(item)

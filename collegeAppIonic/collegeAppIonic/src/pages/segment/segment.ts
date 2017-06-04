@@ -36,7 +36,7 @@ export class SegmentPage {
 
         this.commonhttpProvider.getTabs()
             .subscribe(resData => this.tabs = resData);
-        _.take([1, 2, 3]);
+        
     }
     getStudent() {
         this.commonhttpProvider.getStudent()

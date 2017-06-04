@@ -7,11 +7,12 @@ using System.Web.Routing;
 
 namespace collegeAppIonic
 {
-    public class WebApiApplication : System.Web.HttpApplication
+  public class WebApiApplication : System.Web.HttpApplication
+  {
+    protected void Application_Start()
     {
-        protected void Application_Start()
-        {   
-            GlobalConfiguration.Configure(WebApiConfig.Register);
-        }
+      GlobalConfiguration.Configure(WebApiConfig.Register);
+      collegeAppIonic.tools.appConfig.getDefaultList();
     }
+  }
 }

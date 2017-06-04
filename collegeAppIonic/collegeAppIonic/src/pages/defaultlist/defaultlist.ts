@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+﻿import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { CommonhttpProvider } from '../../providers/commonhttp/commonhttp';
+import * as _ from 'lodash';
 
 /**
  * Generated class for the DefaultlistPage page.
@@ -13,11 +15,20 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'defaultlist.html',
 })
 export class DefaultlistPage {
+    defaultListConfig = [];
+    constructor(public navCtrl: NavController, public navParams: NavParams, private commonhttpProvider: CommonhttpProvider) {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
+    ionViewDidLoad() {
+        this.commonhttpProvider.getJsonFile("assets/config/defaultList.json")
+            .subscribe(data => {
+                this.defaultListConfig = data;
+            })
+        this.commonhttpProvider.postServeData("../api/DefaultList", { category: "testCommonList" })
+            .subscribe(data => {
+                console.log(data);
+            })
     console.log('ionViewDidLoad DefaultlistPage');
   }
 

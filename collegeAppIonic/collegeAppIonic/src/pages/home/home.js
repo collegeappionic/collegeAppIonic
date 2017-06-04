@@ -43,7 +43,7 @@ var HomePage = (function () {
             {
                 name: "页内TAB",
                 com: "SegmentPage"
-            }
+            },
         ];
     }
     HomePage.prototype.itemSelected = function (item) {

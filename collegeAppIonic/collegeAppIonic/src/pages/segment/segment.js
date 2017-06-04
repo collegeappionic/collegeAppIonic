@@ -22,16 +22,33 @@ var SegmentPage = (function () {
         this.navParams = navParams;
         this.commonhttpProvider = commonhttpProvider;
         this.myname = "";
+        this.tabs = [];
+        this.nowTab = {};
         this.concats = [];
     }
-    SegmentPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad SegmentPage');
+    SegmentPage.prototype.alertNowTab = function () {
+        alert(this.nowTab);
     };
-    SegmentPage.prototype.getStudent = function () {
+    SegmentPage.prototype.getNowTab = function () {
+    };
+    SegmentPage.prototype.ionViewDidLoad = function () {
+        var _this = this;
+        console.log('ionViewDidLoad SegmentPage');
         this.commonhttpProvider.getStudent()
             .subscribe(function (resData) {
             return console.log(resData);
         });
+        this.commonhttpProvider.getTabs()
+            .subscribe(function (resData) { return _this.tabs = resData; });
+    };
+    SegmentPage.prototype.getStudent = function () {
+        var _this = this;
+        this.commonhttpProvider.getStudent()
+            .subscribe(function (resData) {
+            return console.log(resData);
+        });
+        this.commonhttpProvider.getTabs()
+            .subscribe(function (resData) { return _this.tabs = resData; });
     };
     return SegmentPage;
 }());

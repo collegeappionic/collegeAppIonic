@@ -19,6 +19,14 @@ export class CommonhttpProvider {
         return this.http.get('../api/student')
             .map(this.extractData);
     }
+    getJsonFile(path: string): Observable<any[]> {
+        return this.http.get(path)
+            .map(this.extractData);
+    }
+    postServeData(path: string, data: any): Observable<any[]> {
+        return this.http.post(path,data)
+            .map(this.extractData);
+    }
     private extractData(res: Response) {
         let body = res.json();
         return body||{};
