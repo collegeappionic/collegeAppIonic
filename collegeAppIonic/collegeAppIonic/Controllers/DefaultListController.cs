@@ -27,7 +27,8 @@ namespace collegeAppIonic.Controllers
     public dynamic Post(dynamic postData)
     {
       JObject jobj = postData;
-      appConfig.getAppConfig();
+      JToken config = appConfig.getDefaultList(jobj["category"].ToString());
+
       string s = "";
       return s;
     }

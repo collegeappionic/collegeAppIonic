@@ -33,7 +33,7 @@ export class SegmentPage {
             .subscribe(resData =>
                 console.log(resData)
             );
-
+               
         this.commonhttpProvider.getTabs()
             .subscribe(resData => this.tabs = resData);
         
