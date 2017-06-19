@@ -43,6 +43,7 @@ export class IndexPage {
             //console.log(Data)
             function (Data) {
                 this.resData = Data
+                console.log(this.resData);
             }
         );
         this.clickMessage = 'You are my hero!';
