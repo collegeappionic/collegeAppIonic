@@ -42,7 +42,6 @@ export class IndexPage {
             Data => this.resData = Data
             //console.log(Data)
         );
-        this.clickMessage = 'You are my hero!';
     }
 
 }
