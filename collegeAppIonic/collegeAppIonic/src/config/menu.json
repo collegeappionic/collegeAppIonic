@@ -1,0 +1,14 @@
+﻿{
+  "title": "视频信息",
+  "state": "app.default_list",
+  "category": "",
+  "badge": 0,
+  "groupId": 152,
+  "display": true,
+  "usertype": "teacher",
+  "edit": false,
+  "badgeUrl": "",
+  "subMenus": [
+
+  ]
+}
