@@ -36,15 +36,11 @@ export class IndexPage {
     
    
 
-
     ionViewDidLoad() {
       //console.log('ionViewDidLoad IndexPage');
-        this.getMenus().subscribe(//Data =>this.resData = Data[0].title
+        this.getMenus().subscribe(
+            Data => this.resData = Data
             //console.log(Data)
-            function (Data) {
-                this.resData = Data
-                console.log(this.resData);
-            }
         );
         this.clickMessage = 'You are my hero!';
     }
