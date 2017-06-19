@@ -20,6 +20,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ActionsheetComponent } from '../components/actionsheet/actionsheet';
 import { CommonhttpProvider } from '../providers/commonhttp/commonhttp';
+import { IndexPage } from "../pages/index/index";
 
 @NgModule({
     declarations: [
@@ -35,7 +36,8 @@ import { CommonhttpProvider } from '../providers/commonhttp/commonhttp';
         ListPage,
         InputsPage,
         PopoverPage,
-        DefaultlistPage
+        DefaultlistPage,
+        IndexPage
     ],
     imports: [
         BrowserModule,
@@ -57,7 +59,8 @@ import { CommonhttpProvider } from '../providers/commonhttp/commonhttp';
         ListPage,
         InputsPage,
         PopoverPage,
-        DefaultlistPage
+        DefaultlistPage,
+        IndexPage
     ],
     providers: [
         StatusBar,

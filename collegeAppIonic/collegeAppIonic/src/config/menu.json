@@ -1,14 +1,45 @@
-﻿{
-  "title": "视频信息",
-  "state": "app.default_list",
-  "category": "",
-  "badge": 0,
-  "groupId": 152,
-  "display": true,
-  "usertype": "teacher",
-  "edit": false,
-  "badgeUrl": "",
-  "subMenus": [
+﻿[
+  {
+    "title": "首页",
+    "state": "app.index",
+    "category": "",
+    "badge": 10,
+    "groupId": 0,
+    "display": true,
+    "img": "../img/xwdt.png",
+    "edit": false,
+    "usertype": "teacher",
+    "badgeUrl": "",
+    "subMenus": [
 
-  ]
-}
+    ]
+  },
+  {
+    "title": "待办文件",
+    "state": "app.default_list",
+    "category": "DXFW",
+    "badge": 10,
+    "groupId": 1,
+    "display": true,
+    "edit": false,
+    "usertype": "teacher",
+    "badgeUrl": "",
+    "subMenus": [
+
+    ]
+  },
+  {
+    "title": "校务公开",
+    "state": "app.default_list",
+    "category": "",
+    "badge": 22,
+    "groupId": 2,
+    "display": true,
+    "usertype": "teacher",
+    "edit": false,
+    "badgeUrl": "",
+    "subMenus": [
+
+    ]
+  }
+]

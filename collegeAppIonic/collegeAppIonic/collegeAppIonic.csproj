@@ -1013,6 +1013,7 @@
     <Content Include="src\pages\datepick\datepick.html" />
     <Content Include="src\pages\defaultlist\defaultlist.html" />
     <Content Include="src\pages\home\home.html" />
+    <Content Include="src\pages\index\index.html" />
     <Content Include="src\pages\inputs\inputs.html" />
     <Content Include="src\pages\list\list.html" />
     <Content Include="src\pages\popover\popover.html" />
@@ -1650,6 +1651,8 @@
     <Content Include="src\pages\defaultlist\defaultlist.scss" />
     <Content Include="src\mockData\segment.json" />
     <Content Include="src\config\defaultList.json" />
+    <Content Include="src\config\menu.json" />
+    <Content Include="src\pages\index\index.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1767,6 +1770,8 @@
     <TypeScriptCompile Include="src\pages\defaultlist\defaultlist.module.ts" />
     <TypeScriptCompile Include="src\pages\defaultlist\defaultlist.ts" />
     <TypeScriptCompile Include="src\pages\home\home.ts" />
+    <TypeScriptCompile Include="src\pages\index\index.module.ts" />
+    <TypeScriptCompile Include="src\pages\index\index.ts" />
     <TypeScriptCompile Include="src\pages\inputs\inputs.module.ts" />
     <TypeScriptCompile Include="src\pages\inputs\inputs.ts" />
     <TypeScriptCompile Include="src\pages\list\list.module.ts" />
