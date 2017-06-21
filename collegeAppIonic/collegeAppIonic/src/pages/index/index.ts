@@ -40,7 +40,9 @@ export class IndexPage {
       //console.log('ionViewDidLoad IndexPage');
         this.getMenus().subscribe(
             Data => this.resData = Data
+       
             //console.log(Data)
+            
         );
     }
 

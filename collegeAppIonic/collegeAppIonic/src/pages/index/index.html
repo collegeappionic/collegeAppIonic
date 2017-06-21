@@ -7,23 +7,20 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>index</ion-title>
+    <ion-title>
+      <div class="float-left zwl-title-top">123123</div>
+      <div class="float-left zwl-title-bottom">战三</div>
+    </ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  
-  <div>
-    <h1>我是谁</h1>
-    
     <div *ngFor="let Data of resData" >{{Data.title}}</div>
     <ion-slides>
       <ion-slide *ngFor="let Data of resData">
         <h1>{{Data.title}}</h1>
       </ion-slide>
     </ion-slides>
-  </div>
-  
 </ion-content>

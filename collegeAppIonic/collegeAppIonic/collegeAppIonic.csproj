@@ -1004,6 +1004,7 @@
     <Content Include="resources\splash.png" />
     <Content Include="src\app\app.html" />
     <Content Include="src\assets\icon\favicon.ico" />
+    <Content Include="src\assets\images\bg.jpg" />
     <Content Include="src\components\actionsheet\actionsheet.html" />
     <Content Include="src\index.html" />
     <Content Include="src\pages\about\about.html" />

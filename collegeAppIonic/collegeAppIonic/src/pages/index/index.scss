@@ -1,3 +1,33 @@
-page-index {
+﻿page-index {
 
+}
+.toolbar-ios {
+  height: 80px;
+  background: url(../../assets/images/bg.jpg) no-repeat;
+  background-size:100% 240px;
+}
+* {
+  font-family: -apple-system, "Helvetica Neue", "Roboto", sans-serif;
+}
+.toolbar-background-ios {
+  background: none;
+}
+.float-left{
+  float:left;
+}
+.name{
+  
+}
+.zwl-title-top {
+  margin-top: 12px;
+  width: 100%;
+  color: #fff;
+}
+.zwl-title-bottom {
+  width: 100%;
+  margin-top: 10px;
+  color: #fff;
+}
+.toolbar-ios ion-title {
+  padding: 0px 25px 1px;
 }
