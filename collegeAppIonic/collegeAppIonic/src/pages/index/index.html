@@ -7,19 +7,28 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>
+   <ion-title>主页 </ion-title>
+    <ion-toolbar no-border-top>
       <div class="float-left zwl-title-top">123123</div>
       <div class="float-left zwl-title-bottom">战三</div>
-    </ion-title>
-  </ion-navbar>
+      <button ion-button icon-only class="zwl-title-button">
+        <ion-icon name="md-log-out"></ion-icon>
+      </button>
+    </ion-toolbar>
+</ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
     <ion-slides>
-      <ion-slide *ngFor="let Data of resData">
-        <h1>{{Data.title}}</h1>
+      <ion-slide *ngFor="let Datapage of resData">
+        <div class="row zwl-ion-slide">
+          <h1>{{Datapage.title}}</h1>
+        </div>
       </ion-slide>
     </ion-slides>
+  <div>
+   
+  </div>
 </ion-content>

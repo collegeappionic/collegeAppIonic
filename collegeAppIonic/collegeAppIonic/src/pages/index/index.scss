@@ -11,7 +11,9 @@
 }
 .toolbar-background-ios {
   background: none;
+  
 }
+
 .float-left{
   float:left;
 }
@@ -22,12 +24,26 @@
   margin-top: 12px;
   width: 100%;
   color: #fff;
+  text-align: center;
 }
 .zwl-title-bottom {
   width: 100%;
   margin-top: 10px;
   color: #fff;
+  text-align: center; 
 }
 .toolbar-ios ion-title {
   padding: 0px 25px 1px;
+}
+.zwl-title-button {
+  z-index: 1;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background-color: transparent;
+}
+.zwl-ion-slide {
+  padding: 0;
+  margin: 0;
+  height: 110px;
 }

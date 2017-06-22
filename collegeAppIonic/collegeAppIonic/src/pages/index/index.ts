@@ -34,8 +34,6 @@ export class IndexPage {
         return body || {};
     }
     
-   
-
     ionViewDidLoad() {
       //console.log('ionViewDidLoad IndexPage');
         this.getMenus().subscribe(
