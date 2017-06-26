@@ -16,15 +16,13 @@ import * as _ from 'lodash';
   templateUrl: 'index.html',
 })
 export class IndexPage {
+    public datameSource= [];
     clickMessage: string;
     resData: {};
     constructor(public navCtrl: NavController, public navParams: NavParams, public http: Http) {
         
     }
     
-    
-    
-
     getMenus(): Observable<any[]> {
         return this.http.get('assets/config/menu.json')
             .map(this.extractData);
@@ -41,9 +39,8 @@ export class IndexPage {
         this.getMenus().subscribe(
             Data => {
                 this.resData = Data;
-                var datameSource: any[] = [];
                 var pages = (Data.length % 6);
-                //console.log(Data);
+                console.log(this.resData);
                 
                 if ((Data.length % 6) > 0) {
                     var pages = Math.floor(Data.length / 6)+1;
@@ -56,28 +53,29 @@ export class IndexPage {
                     //初始化datapage数据格式
                     var dataPage = {
                         "index": i,
-                        "menusData" : [
+                        "data" : [
                             {
-                                "menuData": []
+                                "data": []
                             },
                             {
-                                "menuData": []
+                                "data": []
                             }
                         ]
                     };
                     
-                    datameSource.push(dataPage);
+                    this.datameSource.push(dataPage);
                 }
+                console.log(this.datameSource)
+                //console.log(dataPage)
                 var pageIndex: number = 0;
                 var rowIndex: number = 0;
                 var dataRowIndex: number = 0;
-                _.forEach(this.resData, function (m, key) {
+                _.forEach(Data, function (m, key) {
                     
                     if (pageIndex != Math.floor(key / 6)) {
                         pageIndex = Math.floor(key / 6);
                         rowIndex = 0;
                         dataRowIndex = 0;
-                        console.log(pageIndex);
                     }
                     if (rowIndex > 1) {
                         rowIndex = 0;
@@ -86,10 +84,12 @@ export class IndexPage {
                         dataRowIndex = 0;
                         rowIndex++;
                     }
-                   
+                    //无法接收this.datameSource
+                    this.datameSource[pageIndex].data[rowIndex].data[dataRowIndex] = m;
+                    dataRowIndex++;
                 });
                 
-                //console.log(datameSource)
+                console.log(this.datameSource)
             }
        
             //console.log(Data)

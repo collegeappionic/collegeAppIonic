@@ -22,15 +22,20 @@
 
 <ion-content padding>
     <ion-slides>
-      <ion-slide *ngFor="let Datapage of resData">
-        <!--<div class="row zwl-ion-slide">
-          <h1>{{Datapage.title}}</h1>
+      <ion-slide *ngFor="let dataPage of datameSource">
+        <div>{{dataPage}}</div>
+        <!--<div class="row" style="padding:0;margin:0;height:110px;" *ngFor="let dataRows of dataPage.data">
+          <div class="row-div" *ngFor="let dataRow of dataRows.data">
+            <div style="position:relative;display:inline-block;">
+            </div>
+            <p class="size-14">{{dataRow.title}}</p>
+          </div>
         </div>-->
-        <ion-grid>
+        <!--<ion-grid>
           <ion-row>
             <ion-col>{{Datapage.title}}</ion-col>
           </ion-row>
-        </ion-grid>
+        </ion-grid>-->
       </ion-slide>
     </ion-slides>
   <div>
