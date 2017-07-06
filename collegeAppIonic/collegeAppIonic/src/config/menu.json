@@ -1,0 +1,151 @@
+﻿[
+  {
+    "title": "首页",
+    "state": "app.index",
+    "category": "",
+    "badge": 10,
+    "groupId": 0,
+    "display": true,
+    "img": "../img/xwdt.png",
+    "edit": false,
+    "usertype": "teacher",
+    "badgeUrl": "",
+    "subMenus": [
+
+    ]
+  },
+  {
+    "title": "待办文件",
+    "state": "app.default_list",
+    "category": "DXFW",
+    "badge": 10,
+    "groupId": 1,
+    "display": true,
+    "edit": false,
+    "usertype": "teacher",
+    "badgeUrl": "",
+    "subMenus": [
+
+    ]
+  },
+  {
+    "title": "校务公开",
+    "state": "app.default_list",
+    "category": "",
+    "badge": 22,
+    "groupId": 2,
+    "display": true,
+    "usertype": "teacher",
+    "edit": false,
+    "badgeUrl": "",
+    "subMenus": [
+
+    ]
+  },
+
+  {
+    "title": "教学资源",
+    "state": "app.jxzy",
+    "category": "",
+    "badge": 0,
+    "groupId": 32112,
+    "usertype": "student",
+    "display": true,
+    "edit": false,
+    "badgeUrl": "",
+    "subMenus": [
+
+    ]
+  },
+  {
+    "title": "图书馆",
+    "state": "app.swdxtsg",
+    "category": "",
+    "badge": 0,
+    "groupId": 32112,
+    "usertype": "student",
+    "display": true,
+    "edit": false,
+    "badgeUrl": "",
+    "subMenus": [
+
+    ]
+  },
+  {
+    "title": "市委党校地图",
+    "state": "app.shswdxdt",
+    "category": "",
+    "badge": 0,
+    "groupId": 32112,
+    "usertype": "student",
+    "display": true,
+    "edit": false,
+    "badgeUrl": "",
+    "subMenus": [
+
+    ]
+  },
+  {
+    "title": "手势密码",
+    "state": "app.handSet",
+    "category": "",
+    "badge": 0,
+    "groupId": 32112,
+    "usertype": "student",
+    "display": true,
+    "edit": false,
+    "badgeUrl": "",
+    "subMenus": [
+
+    ]
+  },
+  {
+    "title": "个人信息",
+    "state": "app.studentUserInfo",
+    "category": "",
+    "badge": 0,
+    "groupId": 15,
+    "usertype": "student",
+    "display": true,
+    "img": "../img/sq.png",
+    "edit": false,
+    "badgeUrl": "",
+    "badgeNum": "",
+    "subMenus": [
+
+    ]
+  },
+  {
+    "title": "修改密码",
+    "state": "app.changePsd",
+    "category": "",
+    "badge": 0,
+    "groupId": 15,
+    "usertype": "student",
+    "display": true,
+    "img": "../img/sq.png",
+    "edit": false,
+    "badgeUrl": "",
+    "badgeNum": "",
+    "subMenus": [
+
+    ]
+  },
+  {
+    "title": "问卷调查",
+    "state": "app.default_list",
+    "category": "wjdc",
+    "badge": 0,
+    "groupId": 20,
+    "usertype": "student",
+    "display": true,
+    "img": "../img/tzgg.png",
+    "edit": false,
+    "badgeUrl": "",
+    "badgeNum": "",
+    "subMenus": [
+
+    ]
+  }
+
+]
