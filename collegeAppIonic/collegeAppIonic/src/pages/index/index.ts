@@ -16,7 +16,7 @@ import * as _ from 'lodash';
   templateUrl: 'index.html',
 })
 export class IndexPage {
-    public datameSource= [];
+    public datameSource1 = [];
     clickMessage: string;
     resData: {};
     constructor(public navCtrl: NavController, public navParams: NavParams, public http: Http) {
@@ -34,11 +34,10 @@ export class IndexPage {
     }
     
     ionViewDidLoad() {
-        //console.log('ionViewDidLoad IndexPage');
-        
         this.getMenus().subscribe(
             Data => {
                 this.resData = Data;
+                var datameSource = [];
                 var pages = (Data.length % 6);
                 console.log(this.resData);
                 
@@ -63,9 +62,8 @@ export class IndexPage {
                         ]
                     };
                     
-                    this.datameSource.push(dataPage);
+                    datameSource.push(dataPage);
                 }
-                console.log(this.datameSource)
                 //console.log(dataPage)
                 var pageIndex: number = 0;
                 var rowIndex: number = 0;
@@ -85,16 +83,12 @@ export class IndexPage {
                         rowIndex++;
                     }
                     //无法接收this.datameSource
-                    this.datameSource[pageIndex].data[rowIndex].data[dataRowIndex] = m;
+                    datameSource[pageIndex].data[rowIndex].data[dataRowIndex] = m;
                     dataRowIndex++;
                 });
-                
-                console.log(this.datameSource)
+                this.datameSource1 = datameSource;
+                console.log(this.datameSource1);
             }
-       
-            //console.log(Data)
-            
         );
     }
-
 }

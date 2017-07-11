@@ -47,3 +47,47 @@
   margin: 0;
   height: 110px;
 }
+ion-img {
+  background:none;
+}
+.row-div {
+  width: 33.3%;
+  text-align: center;
+  /*border-right: 1px solid #f6f6f6;*/
+  padding: 10px 0px;
+  /*border-bottom: 1px solid #f6f6f6;*/
+}
+
+.row-div:last-child {
+  border-right: none;
+}
+
+.row-div p {
+  margin-top: 5px;
+}
+
+.slider-pager {
+  font-size: 8px;
+  bottom: 0px;
+  display: block;
+}
+
+.ion-record:before {
+  color: #C00000;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}

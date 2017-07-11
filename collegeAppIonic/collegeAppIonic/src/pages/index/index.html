@@ -22,20 +22,16 @@
 
 <ion-content padding>
     <ion-slides>
-      <ion-slide *ngFor="let dataPage of datameSource">
-        <div>{{dataPage}}</div>
-        <!--<div class="row" style="padding:0;margin:0;height:110px;" *ngFor="let dataRows of dataPage.data">
-          <div class="row-div" *ngFor="let dataRow of dataRows.data">
+      <ion-slide *ngFor="let Datapage of datameSource1">
+        <div class="row" style="padding:0;margin:0;height:110px;" *ngFor="let dataRows of Datapage.data">
+          <div class="row-div" *ngFor="let dataRow of dataRows.data" style="">
             <div style="position:relative;display:inline-block;">
+              <ion-img width="50" height="50" src="{{dataRow.img}}"></ion-img>
+              <div class="elective-number danru" >{{dataRow.badgeNum}}</div>
             </div>
             <p class="size-14">{{dataRow.title}}</p>
           </div>
-        </div>-->
-        <!--<ion-grid>
-          <ion-row>
-            <ion-col>{{Datapage.title}}</ion-col>
-          </ion-row>
-        </ion-grid>-->
+        </div>
       </ion-slide>
     </ion-slides>
   <div>
