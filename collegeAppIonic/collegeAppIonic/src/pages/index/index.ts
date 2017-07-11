@@ -39,8 +39,7 @@ export class IndexPage {
                 this.resData = Data;
                 var datameSource = [];
                 var pages = (Data.length % 6);
-                console.log(this.resData);
-                
+                //console.log(this.resData);
                 if ((Data.length % 6) > 0) {
                     var pages = Math.floor(Data.length / 6)+1;
                     //console.log(pages);
