@@ -61,7 +61,6 @@ export class IndexPage {
                             }
                         ]
                     };
-                    
                     datameSource.push(dataPage);
                 }
                 //console.log(dataPage)
@@ -69,7 +68,6 @@ export class IndexPage {
                 var rowIndex: number = 0;
                 var dataRowIndex: number = 0;
                 _.forEach(Data, function (m, key) {
-                    
                     if (pageIndex != Math.floor(key / 6)) {
                         pageIndex = Math.floor(key / 6);
                         rowIndex = 0;
@@ -86,8 +84,9 @@ export class IndexPage {
                     datameSource[pageIndex].data[rowIndex].data[dataRowIndex] = m;
                     dataRowIndex++;
                 });
+                //这里接受无法接收的this.datameSource再次定义一个datameSource1传动到前面的页面中去
                 this.datameSource1 = datameSource;
-                console.log(this.datameSource1);
+                console.log(this.datameSource1.length);
             }
         );
     }

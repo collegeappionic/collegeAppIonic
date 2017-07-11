@@ -50,6 +50,12 @@
 ion-img {
   background:none;
 }
+ion-slides {
+  height: 220px;
+}
+.size-14 {
+  font-size: 14px !important;
+}
 .row-div {
   width: 33.3%;
   text-align: center;
@@ -90,4 +96,85 @@ a:hover {
 
 a:active {
   text-decoration: none;
+}
+.zwl-notice{
+
+}
+.zwl-notice-header {
+  height: 49px;
+  padding: 10px !important;
+  text-align: left;
+  background: #f3f3f3;
+  border-top: 1px solid #ddd;
+  position: relative;
+  z-index: 2;
+  display: block;
+  margin: -1px;
+  font-size: 16px;
+  user-select: none;
+  line-height:31px;
+}
+ion-app.ios [padding], ion-app.ios [padding] .scroll-content{
+  padding:0
+}
+ion-slides{
+  margin-top:10px;
+}
+.zwl-notice-header-left{
+  float:left;
+}
+.zwl-notice-header-right{
+  float:right
+}
+.zwl-notice-icon {
+  color: #f00;
+  font-size: 34px !important;
+  padding-right:10px;
+  float:left;
+  line-height:30px;
+}
+.zwl-notice-content {
+  min-height: 50px;
+  overflow: hidden;
+  padding: 13px 10px;
+  color: #999;
+  z-index: 2;
+  box-sizing: border-box;
+}
+.zwl-lesson-header {
+  height: 49px;
+  padding: 10px !important;
+  text-align: left;
+  background: #f3f3f3;
+  border-top: 1px solid #ddd;
+  position: relative;
+  z-index: 2;
+  display: block;
+  margin: -1px;
+  font-size: 16px;
+  user-select: none;
+  line-height: 31px;
+}
+.zwl-lesson-content {
+  min-height: 50px;
+  overflow: hidden;
+  padding: 13px 10px;
+  color: #999;
+  z-index: 2;
+  box-sizing: border-box;
+}
+.zwl-lesson-header-left {
+  float: left;
+}
+
+.zwl-lesson-header-right {
+  float: right
+}
+
+.zwl-lesson-icon {
+  color: #f00;
+  font-size: 34px !important;
+  padding-right: 10px;
+  float: left;
+  line-height: 30px;
 }

@@ -34,7 +34,22 @@
         </div>
       </ion-slide>
     </ion-slides>
-  <div>
-   
-  </div>
+    <div class="zwl-notice">
+        <div class="zwl-notice-header">
+          <div class="zwl-notice-header-left"><ion-icon ios="ios-volume-up" class="zwl-notice-icon"></ion-icon>通知公告</div>
+          <div class="zwl-notice-header-right"><ion-icon ios="ios-arrow-forward-outline" ></ion-icon></div>
+        </div>
+        <div class="zwl-notice-content">
+          <div *ngIf="datameSource1.length>0">暂无公告</div>
+        </div>
+    </div>
+    <div class="zwl-lesson">
+      <div class="zwl-lesson-header">
+        <div class="zwl-lesson-header-left"><ion-icon ios="ios-calendar-outline" class="zwl-lesson-icon" ></ion-icon>今日课程</div>
+        <div class="zwl-lesson-header-right"><ion-icon ios="ios-arrow-forward-outline"></ion-icon></div>
+      </div>
+      <div class="zwl-lesson-content">
+        <div *ngIf="datameSource1.length>0">暂无课程</div>
+      </div>
+    </div>
 </ion-content>
