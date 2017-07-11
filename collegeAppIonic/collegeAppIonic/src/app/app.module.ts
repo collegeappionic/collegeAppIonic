@@ -21,6 +21,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { ActionsheetComponent } from '../components/actionsheet/actionsheet';
 import { CommonhttpProvider } from '../providers/commonhttp/commonhttp';
 import { IndexPage } from "../pages/index/index";
+import { EvaluationPage } from "../pages/evaluation/evaluation";
 
 @NgModule({
     declarations: [
@@ -37,7 +38,8 @@ import { IndexPage } from "../pages/index/index";
         InputsPage,
         PopoverPage,
         DefaultlistPage,
-        IndexPage
+        IndexPage,
+        EvaluationPage
     ],
     imports: [
         BrowserModule,
@@ -60,7 +62,8 @@ import { IndexPage } from "../pages/index/index";
         InputsPage,
         PopoverPage,
         DefaultlistPage,
-        IndexPage
+        IndexPage,
+        EvaluationPage
     ],
     providers: [
         StatusBar,

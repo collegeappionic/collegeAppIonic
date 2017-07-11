@@ -1014,6 +1014,7 @@
     <Content Include="src\pages\contact\contact.html" />
     <Content Include="src\pages\datepick\datepick.html" />
     <Content Include="src\pages\defaultlist\defaultlist.html" />
+    <Content Include="src\pages\evaluation\evaluation.html" />
     <Content Include="src\pages\home\home.html" />
     <Content Include="src\pages\index\index.html" />
     <Content Include="src\pages\inputs\inputs.html" />
@@ -1655,6 +1656,7 @@
     <Content Include="src\config\defaultList.json" />
     <Content Include="src\config\menu.json" />
     <Content Include="src\pages\index\index.scss" />
+    <Content Include="src\pages\evaluation\evaluation.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1771,6 +1773,8 @@
     <TypeScriptCompile Include="src\pages\datepick\datepick.ts" />
     <TypeScriptCompile Include="src\pages\defaultlist\defaultlist.module.ts" />
     <TypeScriptCompile Include="src\pages\defaultlist\defaultlist.ts" />
+    <TypeScriptCompile Include="src\pages\evaluation\evaluation.module.ts" />
+    <TypeScriptCompile Include="src\pages\evaluation\evaluation.ts" />
     <TypeScriptCompile Include="src\pages\home\home.ts" />
     <TypeScriptCompile Include="src\pages\index\index.module.ts" />
     <TypeScriptCompile Include="src\pages\index\index.ts" />
