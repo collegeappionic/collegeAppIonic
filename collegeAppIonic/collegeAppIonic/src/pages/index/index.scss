@@ -1,31 +1,53 @@
 ﻿page-index {
 
 }
-ion-content {
-  margin-top: 80px;
+.zwl-zhuye {
+  opacity:0;
 }
-
-.toolbar-ios {
-  height: 80px;
+ion-navbar {
+  height: 100%;
   background: url(../../assets/images/bg.jpg) no-repeat;
+}
+.toolbar-title-ios {
+  color: #fff;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 17px;
+}
+.zwl-header {
+  height: 80px;
   background-size: 100% 240px;
+}
+.font-size18 {
+  font-size: 18px !important;
+}
+.font-size14 {
+  font-size: 14px !important;
 }
 * {
   font-family: -apple-system, "Helvetica Neue", "Roboto", sans-serif;
 }
 .toolbar-background-ios {
   background: none;
-  
 }
-
-.float-left{
-  float:left;
+.header-ios .toolbar-background-ios, .footer-ios .toolbar-background-ios {
+  border-color: rgba(0, 0, 0, 0.3);
+  border: none;
+}
+.float-left {
+  float: left;
 }
 .name{
   
 }
+.button-ios.activated {
+  background-color: transparent;
+}
 .zwl-title-top {
-  margin-top: 12px;
+  float:left;
+  height:30px;
+  padding-top: 8px;
   width: 100%;
   color: #fff;
   text-align: center;
@@ -43,7 +65,7 @@ ion-content {
   z-index: 1;
   position: absolute;
   right: 0px;
-  top: 0px;
+  top: -8px;
   background-color: transparent;
 }
 .zwl-ion-slide {

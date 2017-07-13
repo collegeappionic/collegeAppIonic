@@ -1015,6 +1015,9 @@
     <Content Include="src\pages\datepick\datepick.html" />
     <Content Include="src\pages\defaultlist\defaultlist.html" />
     <Content Include="src\pages\evaluation\evaluation.html" />
+    <Content Include="src\pages\header\header.html" />
+    <Content Include="src\pages\header\header.js" />
+    <Content Include="src\pages\header\header.module.js" />
     <Content Include="src\pages\home\home.html" />
     <Content Include="src\pages\index\index.html" />
     <Content Include="src\pages\inputs\inputs.html" />
@@ -1657,6 +1660,9 @@
     <Content Include="src\config\menu.json" />
     <Content Include="src\pages\index\index.scss" />
     <Content Include="src\pages\evaluation\evaluation.scss" />
+    <Content Include="src\pages\header\header.js.map" />
+    <Content Include="src\pages\header\header.module.js.map" />
+    <Content Include="src\pages\header\header.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1775,6 +1781,8 @@
     <TypeScriptCompile Include="src\pages\defaultlist\defaultlist.ts" />
     <TypeScriptCompile Include="src\pages\evaluation\evaluation.module.ts" />
     <TypeScriptCompile Include="src\pages\evaluation\evaluation.ts" />
+    <TypeScriptCompile Include="src\pages\header\header.module.ts" />
+    <TypeScriptCompile Include="src\pages\header\header.ts" />
     <TypeScriptCompile Include="src\pages\home\home.ts" />
     <TypeScriptCompile Include="src\pages\index\index.module.ts" />
     <TypeScriptCompile Include="src\pages\index\index.ts" />
