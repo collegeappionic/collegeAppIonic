@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Observable } from "rxjs/Observable";
 import 'rxjs/add/operator/map';
 import { Http, Response } from '@angular/http';
+//引入lodash
 import * as _ from 'lodash';
 /**
  * Generated class for the IndexPage page.

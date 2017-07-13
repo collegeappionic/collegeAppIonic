@@ -8,24 +8,30 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 import { Component } from '@angular/core';
-import { AboutPage } from '../about/about';
-import { ContactPage } from '../contact/contact';
-import { IndexPage } from "../index/index";
-import { EvaluationPage } from "../evaluation/evaluation";
-var TabsPage = (function () {
-    function TabsPage() {
-        this.tab1Root = IndexPage;
-        this.tab2Root = AboutPage;
-        this.tab3Root = ContactPage;
-        this.tab4Root = EvaluationPage;
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
+/**
+ * Generated class for the TestpagePage page.
+ *
+ * See http://ionicframework.com/docs/components/#navigation for more info
+ * on Ionic pages and navigation.
+ */
+var TestpagePage = (function () {
+    function TestpagePage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
     }
-    return TabsPage;
+    TestpagePage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad TestpagePage');
+    };
+    return TestpagePage;
 }());
-TabsPage = __decorate([
+TestpagePage = __decorate([
+    IonicPage(),
     Component({
-        templateUrl: 'tabs.html'
+        selector: 'page-testpage',
+        templateUrl: 'testpage.html',
     }),
-    __metadata("design:paramtypes", [])
-], TabsPage);
-export { TabsPage };
-//# sourceMappingURL=tabs.js.map
+    __metadata("design:paramtypes", [NavController, NavParams])
+], TestpagePage);
+export { TestpagePage };
+//# sourceMappingURL=testpage.js.map

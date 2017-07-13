@@ -1,10 +1,14 @@
 ﻿page-index {
 
 }
+ion-content {
+  margin-top: 80px;
+}
+
 .toolbar-ios {
   height: 80px;
   background: url(../../assets/images/bg.jpg) no-repeat;
-  background-size:100% 240px;
+  background-size: 100% 240px;
 }
 * {
   font-family: -apple-system, "Helvetica Neue", "Roboto", sans-serif;
