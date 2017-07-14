@@ -1,11 +1,22 @@
 ﻿page-about {
 
 }
-.zwl-about-goback{
-  position:absolute;
-  left:0;
-  top:0;
-  z-index:12;
+.zwl-about-goback {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 12;
+  height: 44px;
+  width: 76px;
+  line-height: 46px;
+  font-size: 16px;
+  padding: 0 8px;
+  min-height: 31px;
+  font-weight: 400;
+  transition: opacity 0.1s;
+  font-family: inherit;
+  background: transparent;
+  color:#fff;
 }
 .toolbar-ios ion-title{
   z-index:3;
