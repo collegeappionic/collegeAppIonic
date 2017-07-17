@@ -6,11 +6,7 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'about.html'
 })
 export class AboutPage {
-
-  constructor(public navCtrl: NavController) {
-
-  }
-  goBack() {
-      this.navCtrl.pop();
-  }
+    constructor(public navCtrl: NavController) {
+        
+    }
 }

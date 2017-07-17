@@ -67,6 +67,7 @@ export class IndexPage {
                 var pageIndex: number = 0;
                 var rowIndex: number = 0;
                 var dataRowIndex: number = 0;
+                //遍历出有几页menu
                 _.forEach(Data, function (m, key) {
                     if (pageIndex != Math.floor(key / 6)) {
                         pageIndex = Math.floor(key / 6);
