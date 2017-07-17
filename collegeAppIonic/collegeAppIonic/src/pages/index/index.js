@@ -68,6 +68,7 @@ var IndexPage = (function () {
             var pageIndex = 0;
             var rowIndex = 0;
             var dataRowIndex = 0;
+            //遍历出有几页menu
             _.forEach(Data, function (m, key) {
                 if (pageIndex != Math.floor(key / 6)) {
                     pageIndex = Math.floor(key / 6);
@@ -87,7 +88,7 @@ var IndexPage = (function () {
             });
             //这里接受无法接收的this.datameSource再次定义一个datameSource1传动到前面的页面中去
             _this.datameSource1 = datameSource;
-            console.log(_this.datameSource1.length);
+            //console.log(this.datameSource1.length);
         });
     };
     return IndexPage;

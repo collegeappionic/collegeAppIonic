@@ -27,6 +27,7 @@ var HeaderPage = (function () {
 HeaderPage = __decorate([
     IonicPage(),
     Component({
+        selector: 'page-header',
         templateUrl: 'header.html',
     }),
     __metadata("design:paramtypes", [NavController, NavParams])
