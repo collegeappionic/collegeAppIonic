@@ -24,6 +24,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ActionsheetComponent } from '../components/actionsheet/actionsheet';
 import { CommonhttpProvider } from '../providers/commonhttp/commonhttp';
+import { IndexPage } from "../pages/index/index";
 var AppModule = (function () {
     function AppModule() {
     }
@@ -44,7 +45,8 @@ AppModule = __decorate([
             ListPage,
             InputsPage,
             PopoverPage,
-            DefaultlistPage
+            DefaultlistPage,
+            IndexPage
         ],
         imports: [
             BrowserModule,
@@ -65,7 +67,8 @@ AppModule = __decorate([
             ListPage,
             InputsPage,
             PopoverPage,
-            DefaultlistPage
+            DefaultlistPage,
+            IndexPage
         ],
         providers: [
             StatusBar,
