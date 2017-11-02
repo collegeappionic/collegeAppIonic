@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Observable } from "rxjs/Observable";
 import 'rxjs/add/operator/map';
 import { Http, Response } from '@angular/http';
+//引入lodash
 import * as _ from 'lodash';
 /**
  * Generated class for the IndexPage page.
@@ -16,7 +17,7 @@ import * as _ from 'lodash';
   templateUrl: 'index.html',
 })
 export class IndexPage {
-    public datameSource= [];
+    public datameSource1 = [];
     clickMessage: string;
     resData: {};
     constructor(public navCtrl: NavController, public navParams: NavParams, public http: Http) {
@@ -34,14 +35,12 @@ export class IndexPage {
     }
     
     ionViewDidLoad() {
-        //console.log('ionViewDidLoad IndexPage');
-        
         this.getMenus().subscribe(
             Data => {
                 this.resData = Data;
+                var datameSource = [];
                 var pages = (Data.length % 6);
-                console.log(this.resData);
-                
+                //console.log(this.resData);
                 if ((Data.length % 6) > 0) {
                     var pages = Math.floor(Data.length / 6)+1;
                     //console.log(pages);
@@ -62,16 +61,14 @@ export class IndexPage {
                             }
                         ]
                     };
-                    
-                    this.datameSource.push(dataPage);
+                    datameSource.push(dataPage);
                 }
-                console.log(this.datameSource)
                 //console.log(dataPage)
                 var pageIndex: number = 0;
                 var rowIndex: number = 0;
                 var dataRowIndex: number = 0;
+                //遍历出有几页menu
                 _.forEach(Data, function (m, key) {
-                    
                     if (pageIndex != Math.floor(key / 6)) {
                         pageIndex = Math.floor(key / 6);
                         rowIndex = 0;
@@ -85,16 +82,13 @@ export class IndexPage {
                         rowIndex++;
                     }
                     //无法接收this.datameSource
-                    this.datameSource[pageIndex].data[rowIndex].data[dataRowIndex] = m;
+                    datameSource[pageIndex].data[rowIndex].data[dataRowIndex] = m;
                     dataRowIndex++;
                 });
-                
-                console.log(this.datameSource)
+                //这里接受无法接收的this.datameSource再次定义一个datameSource1传动到前面的页面中去
+                this.datameSource1 = datameSource;
+                //console.log(this.datameSource1.length);
             }
-       
-            //console.log(Data)
-            
         );
     }
-
 }

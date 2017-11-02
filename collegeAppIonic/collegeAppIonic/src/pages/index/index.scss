@@ -1,27 +1,53 @@
 ﻿page-index {
 
 }
-.toolbar-ios {
-  height: 80px;
+.zwl-zhuye {
+  opacity:0;
+}
+ion-navbar {
+  height: 100%;
   background: url(../../assets/images/bg.jpg) no-repeat;
-  background-size:100% 240px;
+}
+.toolbar-title-ios {
+  color: #fff;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 17px;
+}
+.zwl-header {
+  height: 80px;
+  background-size: 100% 240px;
+}
+.font-size18 {
+  font-size: 18px !important;
+}
+.font-size14 {
+  font-size: 14px !important;
 }
 * {
   font-family: -apple-system, "Helvetica Neue", "Roboto", sans-serif;
 }
 .toolbar-background-ios {
   background: none;
-  
 }
-
-.float-left{
-  float:left;
+.header-ios .toolbar-background-ios, .footer-ios .toolbar-background-ios {
+  border-color: rgba(0, 0, 0, 0.3);
+  border: none;
+}
+.float-left {
+  float: left;
 }
 .name{
   
 }
+.button-ios.activated {
+  background-color: transparent;
+}
 .zwl-title-top {
-  margin-top: 12px;
+  float:left;
+  height:30px;
+  padding-top: 8px;
   width: 100%;
   color: #fff;
   text-align: center;
@@ -39,11 +65,142 @@
   z-index: 1;
   position: absolute;
   right: 0px;
-  top: 0px;
+  top: -8px;
   background-color: transparent;
 }
 .zwl-ion-slide {
   padding: 0;
   margin: 0;
   height: 110px;
+}
+ion-img {
+  background:none;
+}
+ion-slides {
+  height: 220px;
+}
+.size-14 {
+  font-size: 14px !important;
+}
+.row-div {
+  width: 33.3%;
+  text-align: center;
+  /*border-right: 1px solid #f6f6f6;*/
+  padding: 10px 0px;
+  /*border-bottom: 1px solid #f6f6f6;*/
+}
+
+.row-div:last-child {
+  border-right: none;
+}
+
+.row-div p {
+  margin-top: 5px;
+}
+
+.slider-pager {
+  font-size: 8px;
+  bottom: 0px;
+  display: block;
+}
+
+.ion-record:before {
+  color: #C00000;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+.zwl-notice{
+
+}
+.zwl-notice-header {
+  height: 49px;
+  padding: 10px !important;
+  text-align: left;
+  background: #f3f3f3;
+  border-top: 1px solid #ddd;
+  position: relative;
+  z-index: 2;
+  display: block;
+  margin: -1px;
+  font-size: 16px;
+  user-select: none;
+  line-height:31px;
+}
+ion-app.ios [padding], ion-app.ios [padding] .scroll-content{
+  padding:0
+}
+ion-slides{
+  margin-top:10px;
+}
+.zwl-notice-header-left{
+  float:left;
+}
+.zwl-notice-header-right{
+  float:right
+}
+.zwl-notice-icon {
+  color: #f00;
+  font-size: 34px !important;
+  padding-right:10px;
+  float:left;
+  line-height:30px;
+}
+.zwl-notice-content {
+  min-height: 50px;
+  overflow: hidden;
+  padding: 13px 10px;
+  color: #999;
+  z-index: 2;
+  box-sizing: border-box;
+}
+.zwl-lesson-header {
+  height: 49px;
+  padding: 10px !important;
+  text-align: left;
+  background: #f3f3f3;
+  border-top: 1px solid #ddd;
+  position: relative;
+  z-index: 2;
+  display: block;
+  margin: -1px;
+  font-size: 16px;
+  user-select: none;
+  line-height: 31px;
+}
+.zwl-lesson-content {
+  min-height: 50px;
+  overflow: hidden;
+  padding: 13px 10px;
+  color: #999;
+  z-index: 2;
+  box-sizing: border-box;
+}
+.zwl-lesson-header-left {
+  float: left;
+}
+
+.zwl-lesson-header-right {
+  float: right
+}
+
+.zwl-lesson-icon {
+  color: #f00;
+  font-size: 34px !important;
+  padding-right: 10px;
+  float: left;
+  line-height: 30px;
 }

@@ -11,6 +11,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import 'rxjs/add/operator/map';
 import { Http } from '@angular/http';
+//引入lodash
 import * as _ from 'lodash';
 /**
  * Generated class for the IndexPage page.
@@ -23,7 +24,7 @@ var IndexPage = (function () {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.http = http;
-        this.datameSource = [];
+        this.datameSource1 = [];
     }
     IndexPage.prototype.getMenus = function () {
         return this.http.get('assets/config/menu.json')
@@ -34,17 +35,19 @@ var IndexPage = (function () {
         return body || {};
     };
     IndexPage.prototype.ionViewDidLoad = function () {
-        //console.log('ionViewDidLoad IndexPage');
         var _this = this;
         this.getMenus().subscribe(function (Data) {
             _this.resData = Data;
+            var datameSource = [];
             var pages = (Data.length % 6);
-            console.log(_this.resData);
+            //console.log(this.resData);
             if ((Data.length % 6) > 0) {
                 var pages = Math.floor(Data.length / 6) + 1;
+                //console.log(pages);
             }
             else {
                 var pages = Math.floor(Data.length / 6);
+                //console.log(pages);
             }
             for (var i = 0; i < pages; i++) {
                 //初始化datapage数据格式
@@ -59,13 +62,13 @@ var IndexPage = (function () {
                         }
                     ]
                 };
-                _this.datameSource.push(dataPage);
+                datameSource.push(dataPage);
             }
-            console.log(_this.datameSource);
             //console.log(dataPage)
             var pageIndex = 0;
             var rowIndex = 0;
             var dataRowIndex = 0;
+            //遍历出有几页menu
             _.forEach(Data, function (m, key) {
                 if (pageIndex != Math.floor(key / 6)) {
                     pageIndex = Math.floor(key / 6);
@@ -80,10 +83,12 @@ var IndexPage = (function () {
                     rowIndex++;
                 }
                 //无法接收this.datameSource
-                this.datameSource[pageIndex].data[rowIndex].data[dataRowIndex] = m;
+                datameSource[pageIndex].data[rowIndex].data[dataRowIndex] = m;
                 dataRowIndex++;
             });
-            console.log(_this.datameSource);
+            //这里接受无法接收的this.datameSource再次定义一个datameSource1传动到前面的页面中去
+            _this.datameSource1 = datameSource;
+            //console.log(this.datameSource1.length);
         });
     };
     return IndexPage;

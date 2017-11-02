@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" />
@@ -25,8 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <TypeScriptToolsVersion>2.3</TypeScriptToolsVersion>
-    <Use64BitIISExpress />
+    <TypeScriptToolsVersion>2.2</TypeScriptToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -1007,6 +1005,7 @@
     <Content Include="src\app\app.html" />
     <Content Include="src\assets\icon\favicon.ico" />
     <Content Include="src\assets\images\bg.jpg" />
+    <Content Include="src\assets\images\xwdt.png" />
     <Content Include="src\components\actionsheet\actionsheet.html" />
     <Content Include="src\index.html" />
     <Content Include="src\pages\about\about.html" />
@@ -1015,11 +1014,14 @@
     <Content Include="src\pages\contact\contact.html" />
     <Content Include="src\pages\datepick\datepick.html" />
     <Content Include="src\pages\defaultlist\defaultlist.html" />
+    <Content Include="src\pages\evaluation\evaluation.html" />
+    <Content Include="src\pages\header\header.html" />
+    <Content Include="src\pages\header\header.js" />
+    <Content Include="src\pages\header\header.module.js" />
     <Content Include="src\pages\home\home.html" />
     <Content Include="src\pages\index\index.html" />
     <Content Include="src\pages\inputs\inputs.html" />
     <Content Include="src\pages\list\list.html" />
-    <Content Include="src\pages\mytest\mytest.html" />
     <Content Include="src\pages\popover\popover.html" />
     <Content Include="src\pages\segment\segment.html" />
     <Content Include="src\pages\tabs\tabs.html" />
@@ -1657,7 +1659,10 @@
     <Content Include="src\config\defaultList.json" />
     <Content Include="src\config\menu.json" />
     <Content Include="src\pages\index\index.scss" />
-    <Content Include="src\pages\mytest\mytest.scss" />
+    <Content Include="src\pages\evaluation\evaluation.scss" />
+    <Content Include="src\pages\header\header.js.map" />
+    <Content Include="src\pages\header\header.module.js.map" />
+    <Content Include="src\pages\header\header.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1774,6 +1779,10 @@
     <TypeScriptCompile Include="src\pages\datepick\datepick.ts" />
     <TypeScriptCompile Include="src\pages\defaultlist\defaultlist.module.ts" />
     <TypeScriptCompile Include="src\pages\defaultlist\defaultlist.ts" />
+    <TypeScriptCompile Include="src\pages\evaluation\evaluation.module.ts" />
+    <TypeScriptCompile Include="src\pages\evaluation\evaluation.ts" />
+    <TypeScriptCompile Include="src\pages\header\header.module.ts" />
+    <TypeScriptCompile Include="src\pages\header\header.ts" />
     <TypeScriptCompile Include="src\pages\home\home.ts" />
     <TypeScriptCompile Include="src\pages\index\index.module.ts" />
     <TypeScriptCompile Include="src\pages\index\index.ts" />
@@ -1781,8 +1790,6 @@
     <TypeScriptCompile Include="src\pages\inputs\inputs.ts" />
     <TypeScriptCompile Include="src\pages\list\list.module.ts" />
     <TypeScriptCompile Include="src\pages\list\list.ts" />
-    <TypeScriptCompile Include="src\pages\mytest\mytest.module.ts" />
-    <TypeScriptCompile Include="src\pages\mytest\mytest.ts" />
     <TypeScriptCompile Include="src\pages\popover\popover.module.ts" />
     <TypeScriptCompile Include="src\pages\popover\popover.ts" />
     <TypeScriptCompile Include="src\pages\segment\segment.module.ts" />
